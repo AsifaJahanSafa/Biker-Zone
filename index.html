@@ -24,6 +24,7 @@
                 'bike-primary' :' #E76F51',
                 'bike-background' :'#E76F511A',
                 'blue-color' :'#23A6F0',
+                'footer-bg' :'#0B0D17',
               }
             }
           }
@@ -35,8 +36,8 @@
         }
     </style>
 </head >
-<body class="poppins max-w-screen-lg mx-auto ">
-   <header>
+<body class="poppins  ">
+   <header class="max-w-screen-lg mx-auto">
     <!-- nav-bar -->
   <nav class="mb-5">
     <div class="navbar bg-base-100">
@@ -59,7 +60,7 @@
             <ul
               tabindex="0"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-              <li><a class="text-h2-color font-medium">Home</a></li>
+              <li><a class="text-h2-color font-medium">Home</a>
             <li><a class="text-h2-color font-medium">Shop</a></li>
             <li><a class="text-h2-color font-medium">News</a></li>
             <li><a class="text-h2-color font-medium">Contact</a></li>
@@ -183,7 +184,8 @@
 
    
   </div>
-
+</header>
+<main class="max-w-screen-lg mx-auto">
   <!-- Fetured Bikes In This Year -->
    <div class="px-4">
     <h2 class="text-3xl font-semibold text-h2-color text-center mb-6">Fetured Bikes In This Year</h2>
@@ -350,6 +352,7 @@
      <div class="my-16 px-2">
       <div >
         <h2 class="text-3xl font-semibold text-h2-color text-center mb-6">Frequently <span class="text-bike-primary">Asked Questions</span></h2>
+      
         <div class="lg:flex justify-center items-center gap-5 ">
           <!-- frequent question img -->
           <div class="lg:flex-1 sm:my-9 ">
@@ -390,6 +393,47 @@ know about riding a bike?</div>
             </div>
         </div>
       </div>
-</header>   
+    </main>
+    <footer class="footer bg-footer-bg py-20 px-4 ">
+        <!-- container -->
+      <div class="max-w-screen-lg lg:mx-auto md:flex  justify-between gap-28 items-center ">
+        <!-- footer-left -->
+      <div class=" flex-grow ">
+        <aside class="flex">
+          <p class="text-xs font-normal text-white mr-3"><a href="">Download Now</a></p>
+          <p class="text-xs font-normal text-white"><a href="">License</a></p>
+        </aside>
+
+        <div class="flex  items-center  flex-wrap gap-5">
+        <a class="text-xs font-normal text-white" href="">About</a>   
+        <a class="text-xs font-normal text-white" href="">Features</a>
+        <a class="text-xs font-normal text-white" href="">Pricing</a>
+        <a class="text-xs font-normal text-white" href="">Careers</a>  
+        <a class="text-xs font-normal text-white" href="">Help</a>  
+        <a class="text-xs font-normal text-white" href="">Privacy Policy</a>
+        </div>
+
+        <aside class="mt-7">
+          <p><small class="text-xs font-normal text-white">© 2025 bike. All rights reserved</small></p>
+        </aside>
+      </div>
+
+      <!--footer-right -->
+      <div class="flex-1 ">
+      <nav class="flex flex-col gap-3 ">
+        <h6 class="text-xl font-semibold text-white ">Get the App</h6>
+        <div class="grid grid-cols-1 gap-5">
+          
+          <a  class="w-3/6">
+            <img src="./images/others/android.png" class="" alt="">
+          </a>
+          <a class="w-3/6">
+            <img src="./images/others/ios.png" alt="">
+          </a>
+        </div>
+      </nav>
+    </div>
+  </div>
+    </footer> 
 </body>
 </html>
